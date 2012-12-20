@@ -1,0 +1,10 @@
+<ivy-module version="2.2">
+	<info organisation="com.broodsoft" module="nio-ext-main-dependencies" />
+	<dependencies>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.2" />
+		<dependency org="com.google.guava" name="guava" rev="14.0-rc1" />
+
+		<exclude type="source" ext="jar"  />
+		<exclude type="javadoc" ext="jar" />
+	</dependencies>
+</ivy-module>

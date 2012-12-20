@@ -1,0 +1,3 @@
+*.properties
+!build.properties
+!version.properties
