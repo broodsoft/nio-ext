@@ -11,14 +11,14 @@ Requirements:
 If your JAVA_HOME isn't set to Java 7, create a properties file in the "bld" directory, name it "$USERNAME.properties", and set a property called "jdk.dir" to the Java 7 directory path.
 
 To grab the dependencies using Apache Ivy (only needs to be done once):
-  cd bld
-  ant ivy-main
+	cd bld
+	ant ivy-main
 
 To build the project:
-  cd bld
-  ant release
-Or, if your JAVA_HOME isn't set to Java 7:
-  ant -Dtarget=release exec
+	cd bld
+	ant release
+	#Or, if your JAVA_HOME isn't set to Java 7:
+	ant -Dtarget=release exec
 
 
 The example below illustrates connecting to a server, sending a request, and receiving a response. An explicit timeout of one second is specified on each asynchronous operation.
