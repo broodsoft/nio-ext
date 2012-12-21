@@ -12,10 +12,9 @@
 
 	<property file="${version.properties.file}" />
 	<property file="${user.properties.file}" />
-	<property file="${app.properties.file}" />
 
 	<property name="jdk.dir" location="${java.home}/.." />
-	<property file="${build.properties.file}" />
+	<property file="${app.properties.file}" />
 
 	<echo message="JDK path: ${jdk.dir}" />
 
