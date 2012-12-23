@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd">
-<suite name="nio-ext">
-	<test name="main">
-		<packages>
-			<package name="com.broodsoft.nioext.*" />
-		</packages>
-	</test>
-</suite>

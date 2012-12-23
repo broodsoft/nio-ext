@@ -1,5 +1,4 @@
-/bin/
-/lib/ivy
-/out/
-/rel/
-/stg/
+/.settings/
+/.classpath
+/.project
+/target/
