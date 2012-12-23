@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration
+	xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="false"
+>
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler" />
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="DEBUG" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{hh:mm:ss.SSS} %5p [%t] %C{1}#%M:%L - %m%n" />
+		</layout>
+	</appender>
+
+	<category name="com.broodsoft.nioext.demo">
+		<priority value="DEBUG" />
+		<appender-ref ref="CONSOLE" />
+	</category>
+
+	<category name="com.broodsoft.nioext.op">
+		<priority value="DEBUG" />
+		<appender-ref ref="CONSOLE" />
+	</category>
+
+	<root>
+		<priority value="WARN" />
+	</root>
+</log4j:configuration>
